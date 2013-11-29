@@ -35,7 +35,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :test do
+group :test, :development do
   gem 'capybara'
   gem 'cucumber-rails', :require => false
   gem 'rspec-rails'

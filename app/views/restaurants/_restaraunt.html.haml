@@ -1,0 +1,8 @@
+%h2 
+  - if request.fullpath == '/' || request.fullpath == '/restaurants'
+    = link_to restaurant.name, restaurant
+  - else 
+    = restaurant.name
+
+%p
+  = restaurant.description

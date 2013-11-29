@@ -45,10 +45,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Yalp</a>
+        <a class="navbar-brand" href="/">Yalp</a>
+        <span><%= link_to "Restaurants", restaurants_path %></span>
+        <span><%= link_to "Add Restaurant", new_restaurant_path %></span>
         <div class="nav-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
+            <li><%= link_to "Add Restaurant", new_restaurant_path %></li>
             <li><%= link_to "Link2", "/path2"  %></li>
             <li><%= link_to "Link3", "/path3"  %></li>
           </ul>
@@ -59,8 +61,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9">
-<!--      <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p> -->
+          <p class="notice"><%= notice %></p>
+          <!-- <p class="alert"><%= alert %></p> -->
           <%= bootstrap_flash %>
           <%= yield %>
         </div>

@@ -1,0 +1,12 @@
+%section{ class: 'review_form' }
+  = form_for [@restaurant, Review.new] do |f|
+    %p
+      = f.label :review
+      = f.text_area :review
+
+    %p
+      = f.label :rating
+      = f.number_field :rating
+
+    %p
+      = f.submit 'Add review'

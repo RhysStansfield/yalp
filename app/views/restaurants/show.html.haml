@@ -1,0 +1,11 @@
+%section{ class: 'restaurant' }
+
+  = render partial: 'restaraunt', locals: { restaurant: @restaurant }
+
+%section{ class: 'reviews' }
+
+  = render partial: 'reviews/review_form'
+
+  - @restaurant.reviews.each do |review|
+
+    = render partial: 'reviews/review', locals: { review: review }
